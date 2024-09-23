@@ -3,17 +3,17 @@
 <plist version="1.0">
 <dict>
 	<key>API_KEY</key>
-	<string>AIzaSyCO2xOUz33jrxkavceOXESry8iq5IbOGf8</string>
+	<string>AIzaSyBXTqDjZj7D_SAnLtf1bRI6y7Aszb4E16E</string>
 	<key>GCM_SENDER_ID</key>
-	<string>623593625432</string>
+	<string>220674668831</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.example.brewCrew</string>
 	<key>PROJECT_ID</key>
-	<string>brew-crew-6b770</string>
+	<string>brew-crew-test-85328</string>
 	<key>STORAGE_BUCKET</key>
-	<string>brew-crew-6b770.appspot.com</string>
+	<string>brew-crew-test-85328.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -25,6 +25,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:623593625432:ios:b34c9837537c68a40eb72d</string>
+	<string>1:220674668831:ios:b9de4afd2b4b573b64982a</string>
 </dict>
 </plist>

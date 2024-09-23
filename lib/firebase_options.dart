@@ -50,19 +50,20 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyAu_V-5nqyCZ-LPnZImcYDg9PRfXQtxvDU',
-    appId: '1:623593625432:android:64f700a936ca80c00eb72d',
-    messagingSenderId: '623593625432',
-    projectId: 'brew-crew-6b770',
-    storageBucket: 'brew-crew-6b770.appspot.com',
+    apiKey: 'AIzaSyD3B7DLUyYEQCBIlU1goxhNhtLcYdD1ryw',
+    appId: '1:220674668831:android:a6007d7a0617e6ab64982a',
+    messagingSenderId: '220674668831',
+    projectId: 'brew-crew-test-85328',
+    storageBucket: 'brew-crew-test-85328.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyCO2xOUz33jrxkavceOXESry8iq5IbOGf8',
-    appId: '1:623593625432:ios:b34c9837537c68a40eb72d',
-    messagingSenderId: '623593625432',
-    projectId: 'brew-crew-6b770',
-    storageBucket: 'brew-crew-6b770.appspot.com',
+    apiKey: 'AIzaSyBXTqDjZj7D_SAnLtf1bRI6y7Aszb4E16E',
+    appId: '1:220674668831:ios:b9de4afd2b4b573b64982a',
+    messagingSenderId: '220674668831',
+    projectId: 'brew-crew-test-85328',
+    storageBucket: 'brew-crew-test-85328.appspot.com',
     iosBundleId: 'com.example.brewCrew',
   );
+
 }

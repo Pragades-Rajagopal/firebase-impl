@@ -31,7 +31,7 @@ class _SignInState extends State<SignIn> {
             if (result == null) {
               print('signin error');
             } else {
-              print('signed in: $result');
+              print('signed in: ${result.uid}');
             }
           },
         ),

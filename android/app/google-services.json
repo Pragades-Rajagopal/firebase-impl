@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "623593625432",
-    "project_id": "brew-crew-6b770",
-    "storage_bucket": "brew-crew-6b770.appspot.com"
+    "project_number": "220674668831",
+    "project_id": "brew-crew-test-85328",
+    "storage_bucket": "brew-crew-test-85328.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:623593625432:android:64f700a936ca80c00eb72d",
+        "mobilesdk_app_id": "1:220674668831:android:a6007d7a0617e6ab64982a",
         "android_client_info": {
           "package_name": "com.sailorsdev.brew_crew"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAu_V-5nqyCZ-LPnZImcYDg9PRfXQtxvDU"
+          "current_key": "AIzaSyD3B7DLUyYEQCBIlU1goxhNhtLcYdD1ryw"
         }
       ],
       "services": {
