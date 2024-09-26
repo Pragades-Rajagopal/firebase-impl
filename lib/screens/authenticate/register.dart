@@ -3,15 +3,15 @@ import 'package:brew_crew/shared/common.dart';
 import 'package:brew_crew/shared/loading_screen.dart';
 import 'package:flutter/material.dart';
 
-class SignIn extends StatefulWidget {
+class Register extends StatefulWidget {
   final Function toggleView;
-  const SignIn({super.key, required this.toggleView});
+  const Register({super.key, required this.toggleView});
 
   @override
-  State<SignIn> createState() => _SignInState();
+  State<Register> createState() => _RegisterState();
 }
 
-class _SignInState extends State<SignIn> {
+class _RegisterState extends State<Register> {
   final AuthService _authService = AuthService();
   final _formKey = GlobalKey<FormState>();
   // Text field state
@@ -29,14 +29,14 @@ class _SignInState extends State<SignIn> {
             appBar: AppBar(
               backgroundColor: Colors.brown[400],
               elevation: 0.0,
-              title: const Text('Sign in to Brew Crew'),
+              title: const Text('Sign up to Brew Crew'),
               actions: [
                 TextButton(
                   onPressed: () {
                     widget.toggleView();
                   },
                   child: const Text(
-                    'Sign up',
+                    'Sign in',
                     style: TextStyle(
                       color: Colors.black,
                     ),
@@ -85,10 +85,10 @@ class _SignInState extends State<SignIn> {
                         if (_formKey.currentState!.validate()) {
                           setState(() => loading = true);
                           dynamic result = await _authService
-                              .signInWithEmailAndPass(email, password);
+                              .registerWithEmailAndPass(email, password);
                           if (result == null) {
                             setState(() {
-                              error = 'Email or password is incorrect';
+                              error = 'Please provide a valid email address';
                               loading = false;
                             });
                           }
@@ -96,11 +96,11 @@ class _SignInState extends State<SignIn> {
                       },
                       style: ButtonStyle(
                         backgroundColor:
-                            WidgetStatePropertyAll(Colors.brown[200]),
+                            WidgetStatePropertyAll(Colors.pink[300]),
                       ),
                       child: const Text(
-                        'Sign in',
-                        style: TextStyle(color: Colors.black),
+                        'Sign up',
+                        style: TextStyle(color: Colors.white),
                       ),
                     ),
                     const SizedBox(height: 12.0),
