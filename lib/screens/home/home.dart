@@ -1,5 +1,7 @@
+import 'package:brew_crew/models/brew.dart';
+import 'package:brew_crew/screens/home/brew_list.dart';
 import 'package:brew_crew/services/auth.dart';
-import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:brew_crew/shared/loading_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:brew_crew/services/database.dart';
@@ -11,9 +13,12 @@ class Home extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return StreamProvider<QuerySnapshot?>.value(
-      initialData: null,
+    return StreamProvider<List<Brew>?>.value(
+      initialData: const [],
       value: DatabaseService().brews,
+      catchError: (context, error) {
+        return [];
+      },
       child: Scaffold(
         backgroundColor: Colors.brown[50],
         appBar: AppBar(
@@ -29,6 +34,14 @@ class Home extends StatelessWidget {
             ),
           ],
         ),
+        body: Consumer<List<Brew>?>(builder: (context, brews, child) {
+          if (brews == null || brews.isEmpty) {
+            return const LoadingScreen();
+          }
+          return BrewList(
+            brews: brews,
+          );
+        }),
       ),
     );
   }
